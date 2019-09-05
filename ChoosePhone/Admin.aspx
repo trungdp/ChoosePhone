@@ -14,8 +14,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <uc1:LoginUC runat="server" id="LoginUC" CssClass="login-uc"/>
-        
+        <%--<uc1:LoginUC runat="server" id="LoginUC" CssClass="login-uc"/>--%>
+        <asp:PlaceHolder ID="adminPlh" runat="server"></asp:PlaceHolder>
     </div>
     </form>
 </body>

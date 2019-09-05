@@ -13,5 +13,15 @@ namespace ChoosePhone.cms.admin.login
         {
 
         }
+
+        protected void loginBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin.aspx?modul=Home");
+        }
+
+        protected void cancelBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

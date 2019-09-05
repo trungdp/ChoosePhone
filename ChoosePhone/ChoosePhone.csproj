@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cms\admin\home\HomeUC.ascx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -123,6 +124,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\home\HomeUC.ascx.cs">
+      <DependentUpon>HomeUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\home\HomeUC.ascx.designer.cs">
+      <DependentUpon>HomeUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="cms\admin\login\LoginUC.ascx.cs">
       <DependentUpon>LoginUC.ascx</DependentUpon>

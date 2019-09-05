@@ -51,6 +51,10 @@
     user-select: unset;
     border: none;
 }
+.login-input .login-field:hover,
+.login-input .login-field:focus{
+    opacity: 1;
+}
 .control-row{
     position: relative;
     width: calc(100% - 140px);
@@ -59,12 +63,12 @@
 }
 
 .control-row .access-btn{
-    width: 100px;
+    width: 140px;
     color: #f5f5f5;
     float: left;
 }
 .control-row .cancel-btn{
-    width: 100px;
+    width: 140px;
     color: #f5f5f5;
     float: right
 }

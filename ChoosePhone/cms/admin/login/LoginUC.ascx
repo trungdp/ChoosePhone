@@ -7,9 +7,10 @@
         <div class="title">Đăng nhập</div>
         <input type="text" class="login-field" value="" placeholder="Tên đăng nhập"></input>
         <input type="password" class="login-field" value="" placeholder="Mật khẩu"></input>
+
         <div class="control-row">
-            <a class="access-btn" href="#">Đăng nhập</a>
-            <a class="cancel-btn" href="#">Thoát</a>
+            <asp:Button ID="loginBtn" runat="server" CssClass="access-btn" Text="Đăng nhập" OnClick="loginBtn_Click" />
+            <asp:Button ID="cancelBtn" runat="server" CssClass="cancel-btn" Text="Thoát" OnClick="cancelBtn_Click" />
         </div>
     </div>
 </div>
