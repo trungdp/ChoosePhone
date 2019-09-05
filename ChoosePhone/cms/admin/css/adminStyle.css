@@ -1,0 +1,38 @@
+﻿body {
+    margin:0;
+    font-family:Tahoma;
+    font-size: 20px;
+    position:relative;
+}
+
+html{
+    
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+*:focus{
+    outline:none;
+}
+
+::placeholder{
+    color:#e9e7e7;
+}
+
+.access-btn{
+   padding: 10px 20px 10px 20px;
+   background-color: #8AC24A;
+   text-align: center;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.cancel-btn{
+   padding: 10px 20px 10px 20px;
+   background-color: #c1c1c1;
+   text-align: center;
+   border-radius: 5px;
+   text-decoration: none;
+}
