@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ChoosePhone.cms.admin.home
 {
-    public partial class HomeUC : System.Web.UI.UserControl
+    public partial class HomePosterUC : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

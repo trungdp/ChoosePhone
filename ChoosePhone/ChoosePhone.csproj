@@ -97,6 +97,7 @@
     <Content Include="cms\admin\css\home.css" />
     <Content Include="cms\admin\customer\CustomerUC.ascx" />
     <Content Include="cms\admin\employee\EmployeeUC.ascx" />
+    <Content Include="cms\admin\home\HomePosterUC.ascx" />
     <Content Include="cms\admin\home\HomeUC.ascx" />
     <Content Include="cms\admin\LoadModulUC.ascx" />
     <Content Include="cms\admin\product\ProductUC.ascx" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="cms\admin\employee\EmployeeUC.ascx.designer.cs">
       <DependentUpon>EmployeeUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\home\HomePosterUC.ascx.cs">
+      <DependentUpon>HomePosterUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\home\HomePosterUC.ascx.designer.cs">
+      <DependentUpon>HomePosterUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="cms\admin\home\HomeUC.ascx.cs">
       <DependentUpon>HomeUC.ascx</DependentUpon>
