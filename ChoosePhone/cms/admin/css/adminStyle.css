@@ -83,6 +83,11 @@ html{
     color: #646464;
 }
 
+.header .navbar ul li .navbar-selected-item{
+    background-color: #ADCF89;
+    color: #646464;
+}
+
 .site-map{
     font-size: 80%;
     margin-left: 80px;
@@ -92,5 +97,4 @@ html{
 .site-map a{
     color: #8AC24A;
     text-decoration: none;
-    
 }

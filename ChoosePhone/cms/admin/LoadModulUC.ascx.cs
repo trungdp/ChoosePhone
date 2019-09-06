@@ -39,13 +39,13 @@ namespace ChoosePhone.cms.admin
                     break;
             }
 
-
         }
 
         protected string DanhDau(string modul)
         {
-            string r = "123";
-
+            string r = "";
+            if (this.modul == modul)
+                r = "navbar-selected-item";
             return r;
         }
     }
