@@ -94,7 +94,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cms\admin\css\home.css" />
+    <Content Include="cms\admin\customer\CustomerUC.ascx" />
+    <Content Include="cms\admin\employee\EmployeeUC.ascx" />
     <Content Include="cms\admin\home\HomeUC.ascx" />
+    <Content Include="cms\admin\LoadModulUC.ascx" />
+    <Content Include="cms\admin\product\ProductUC.ascx" />
+    <Content Include="cms\admin\profile\ProfileUC.ascx" />
+    <Content Include="cms\admin\sell\SellUC.ascx" />
+    <Content Include="cms\admin\statistic\StatisticUC.ascx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -105,6 +113,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
@@ -125,6 +134,20 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\customer\CustomerUC.ascx.cs">
+      <DependentUpon>CustomerUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\customer\CustomerUC.ascx.designer.cs">
+      <DependentUpon>CustomerUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\employee\EmployeeUC.ascx.cs">
+      <DependentUpon>EmployeeUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\employee\EmployeeUC.ascx.designer.cs">
+      <DependentUpon>EmployeeUC.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\home\HomeUC.ascx.cs">
       <DependentUpon>HomeUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,12 +155,47 @@
     <Compile Include="cms\admin\home\HomeUC.ascx.designer.cs">
       <DependentUpon>HomeUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\LoadModulUC.ascx.cs">
+      <DependentUpon>LoadModulUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\LoadModulUC.ascx.designer.cs">
+      <DependentUpon>LoadModulUC.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\login\LoginUC.ascx.cs">
       <DependentUpon>LoginUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cms\admin\login\LoginUC.ascx.designer.cs">
       <DependentUpon>LoginUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\product\ProductUC.ascx.cs">
+      <DependentUpon>ProductUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\product\ProductUC.ascx.designer.cs">
+      <DependentUpon>ProductUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\profile\ProfileUC.ascx.cs">
+      <DependentUpon>ProfileUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\profile\ProfileUC.ascx.designer.cs">
+      <DependentUpon>ProfileUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\sell\SellUC.ascx.cs">
+      <DependentUpon>SellUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\sell\SellUC.ascx.designer.cs">
+      <DependentUpon>SellUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\statistic\StatisticUC.ascx.cs">
+      <DependentUpon>StatisticUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\statistic\StatisticUC.ascx.designer.cs">
+      <DependentUpon>StatisticUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

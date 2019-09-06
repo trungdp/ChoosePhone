@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Admin.aspx" title="Admin"  description="Admin page">
+    <siteMapNode url="Admin.aspx?modul=Home" title="Trang chủ"  description="Home Module" />
+    <siteMapNode url="Admin.aspx?modul=Prod" title="Sản phẩm"   description="Product Module" />
+    <siteMapNode url="Admin.aspx?modul=Empl" title="Nhân viên"  description="Employee Module" />
+    <siteMapNode url="Admin.aspx?modul=Cust" title="Khách hàng" description="Customer Module" />
+    <siteMapNode url="Admin.aspx?modul=Sell" title="Bán hàng"   description="Sell Module" />
+    <siteMapNode url="Admin.aspx?modul=Stat" title="Thống kê"   description="Statistic Module" />
+    <siteMapNode url="Admin.aspx?modul=Prof" title="Tài khoản"  description="Profile Module" />
+  </siteMapNode>
+</siteMap>

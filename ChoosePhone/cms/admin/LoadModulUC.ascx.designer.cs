@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ChoosePhone {
+namespace ChoosePhone.cms.admin {
     
     
-    public partial class Admin {
+    public partial class LoadModulUC {
         
         /// <summary>
-        /// form1 control.
+        /// sitemapMPth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.SiteMapPath sitemapMPth;
         
         /// <summary>
-        /// adminPlh control.
+        /// loadModulePlh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder adminPlh;
+        protected global::System.Web.UI.WebControls.PlaceHolder loadModulePlh;
     }
 }

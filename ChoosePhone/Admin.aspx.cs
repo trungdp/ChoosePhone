@@ -14,11 +14,15 @@ namespace ChoosePhone
         {
             if (Request.QueryString["modul"] != null)
                 modul = Request.QueryString["modul"];
-            //if (!IsPostBack)
-                if (String.IsNullOrEmpty(modul))
-                    adminPlh.Controls.Add(LoadControl("cms/admin/login/LoginUC.ascx"));
-                else
-                    adminPlh.Controls.Add(LoadControl("cms/admin/home/HomeUC.ascx"));
+            if (!IsPostBack && String.IsNullOrEmpty(modul))
+                adminPlh.Controls.Add(LoadControl("cms/admin/login/LoginUC.ascx"));
+            else
+                openModule();
+        }
+
+        private void openModule()
+        {
+            adminPlh.Controls.Add(LoadControl("cms/admin/LoadModulUC.ascx"));
         }
     }
 }

@@ -10,11 +10,11 @@
     <title>Admin</title>
     <link href="cms/admin/css/adminStyle.css" rel="stylesheet" />
     <link href="cms/admin/css/login.css" rel="stylesheet" />
+    <link href="cms/admin/css/home.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <%--<uc1:LoginUC runat="server" id="LoginUC" CssClass="login-uc"/>--%>
         <asp:PlaceHolder ID="adminPlh" runat="server"></asp:PlaceHolder>
     </div>
     </form>
