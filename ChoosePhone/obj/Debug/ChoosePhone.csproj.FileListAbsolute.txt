@@ -31,3 +31,37 @@ C:\Users\trung\OneDrive\Máy tính\Workspace\ChoosePhone\ChoosePhone\bin\Microso
 C:\Users\trung\OneDrive\Máy tính\Workspace\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.csprojResolveAssemblyReference.cache
 C:\Users\trung\OneDrive\Máy tính\Workspace\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.dll
 C:\Users\trung\OneDrive\Máy tính\Workspace\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.pdb
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\ApplicationInsights.config
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\csc.exe
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\vbc.exe
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\VBCSCompiler.exe
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\ChoosePhone.dll.config
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\ChoosePhone.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\ChoosePhone.pdb
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.Web.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.ApplicationInsights.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.Web.xml
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.ApplicationInsights.xml
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.csprojAssemblyReference.cache
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.csproj.CopyComplete
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.dll
+C:\Users\HELLO\Source\Repos\trungdp\ChoosePhone\ChoosePhone\obj\Debug\ChoosePhone.pdb

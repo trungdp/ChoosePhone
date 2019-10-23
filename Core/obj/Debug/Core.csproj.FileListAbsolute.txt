@@ -1,0 +1,10 @@
+C:\Users\trung\OneDrive\Máy tính\Workspace\LibCore\Core\bin\Debug\Core.dll
+C:\Users\trung\OneDrive\Máy tính\Workspace\LibCore\Core\bin\Debug\Core.pdb
+C:\Users\trung\OneDrive\Máy tính\Workspace\LibCore\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\trung\OneDrive\Máy tính\Workspace\LibCore\Core\obj\Debug\Core.dll
+C:\Users\trung\OneDrive\Máy tính\Workspace\LibCore\Core\obj\Debug\Core.pdb
+D:\Desktop\Workspace\BalloonShop\Core\bin\Debug\Core.dll
+D:\Desktop\Workspace\BalloonShop\Core\bin\Debug\Core.pdb
+D:\Desktop\Workspace\BalloonShop\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Desktop\Workspace\BalloonShop\Core\obj\Debug\Core.dll
+D:\Desktop\Workspace\BalloonShop\Core\obj\Debug\Core.pdb
