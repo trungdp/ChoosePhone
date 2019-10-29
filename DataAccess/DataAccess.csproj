@@ -48,6 +48,17 @@
     <Compile Include="Classes\Order.cs" />
     <Compile Include="Classes\OrderDetail.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\Cart.cs" />
+    <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\MemberCustomer.cs" />
+    <Compile Include="DTO\OperatingSystem.cs" />
+    <Compile Include="DTO\Order.cs" />
+    <Compile Include="DTO\Producer.cs" />
+    <Compile Include="DTO\Product.cs" />
+    <Compile Include="DTO\Promotion.cs" />
+    <Compile Include="DTO\Size.cs" />
     <Compile Include="GlobalConfiguration.cs" />
     <Compile Include="Link.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +70,7 @@
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
