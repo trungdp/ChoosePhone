@@ -1,0 +1,12 @@
+﻿*{
+    outline: 0.5px solid black;
+}
+body {
+}
+#navbar {
+    background-color: #646464;
+    color: #f8f8f8;
+}
+    #navbar .navbar-content {
+        background-color: #F2B02A;
+    }
