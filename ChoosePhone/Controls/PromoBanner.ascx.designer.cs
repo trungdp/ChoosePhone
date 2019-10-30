@@ -7,36 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ChoosePhone {
+namespace ChoosePhone.Controls {
     
     
-    public partial class Index {
+    public partial class PromoBanner {
         
         /// <summary>
-        /// PromoBanner1 control.
+        /// lnkPromo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ChoosePhone.Controls.PromoBanner PromoBanner1;
+        protected global::System.Web.UI.WebControls.HyperLink lnkPromo;
         
         /// <summary>
-        /// SearchMenu1 control.
+        /// imgPromoImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ChoosePhone.Controls.SearchMenu SearchMenu1;
-        
-        /// <summary>
-        /// ProductsList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ChoosePhone.Controls.ProductsList ProductsList1;
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgPromoImage;
     }
 }

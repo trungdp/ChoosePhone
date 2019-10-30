@@ -1,10 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SearchMenu.ascx.cs" Inherits="ChoosePhone.Controls.SearchMenu" %>
-<div class="float-left">
-    <h1>Tìm kiếm</h1>
+<div class="float-left mr-2">
+    <h3>Tìm kiếm</h3>
     <asp:Repeater runat="server" ID="repBrandList">
         <HeaderTemplate>
             <div class="menuBrand">
-                <h2>Hãng sản xuất</h2>
+                <h4>Hãng sản xuất</h4>
                 <ul>
         </HeaderTemplate>
         <ItemTemplate>
@@ -20,7 +20,7 @@
     <asp:Repeater runat="server" ID="repPriceList">
         <HeaderTemplate>
             <div class="menuPrice">
-                <h2>Chọn mức giá</h2>
+                <h4>Chọn mức giá</h4>
                 <ul>
         </HeaderTemplate>
         <ItemTemplate>

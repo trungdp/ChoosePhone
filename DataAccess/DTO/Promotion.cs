@@ -13,7 +13,7 @@ namespace DataAccess.DTO
         public char PromotionName { get; set; }
         public int ObjectPromotion { get; set; }
         public float PromotionPercent { get; set; }
-        public string Description { get; set }
+        public string Description { get; set; }
 
         public Promotion () {}
     }

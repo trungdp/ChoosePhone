@@ -14,6 +14,8 @@ namespace DataAccess
         private static int desLenght;
         private static int imagePerSite;
         private static int cartPersistDays;
+        private static string promoImage;
+        private static string promoUrl;
 
         public static int PageSize
         {
@@ -38,6 +40,11 @@ namespace DataAccess
         {
             get { return cartPersistDays; }
         }
+        public static string PromoImage
+        {
+            get { return promoImage; }
+        }
+        public static string PromoUrl{ get { return promoUrl; } }
 
         static GlobalConfiguration()
         {
@@ -46,6 +53,8 @@ namespace DataAccess
             siteName = ConfigurationManager.AppSettings["SiteName"];
             imagePerSite = Convert.ToInt32(ConfigurationManager.AppSettings["ImagesPerPage"]);
             cartPersistDays = Convert.ToInt32(ConfigurationManager.AppSettings["CartPersistDays"]);
+            promoImage = ConfigurationManager.AppSettings["PromoImage"];
+            promoUrl = ConfigurationManager.AppSettings["PromoUrl"];
         }
     }
 }

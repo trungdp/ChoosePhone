@@ -106,8 +106,10 @@
     <Content Include="cms\admin\sell\SellUC.ascx" />
     <Content Include="cms\admin\statistic\StatisticUC.ascx" />
     <Content Include="Controls\HeaderBrands.ascx" />
+    <Content Include="Controls\OrdersList.ascx" />
     <Content Include="Controls\Pager.ascx" />
     <Content Include="Controls\ProductsList.ascx" />
+    <Content Include="Controls\PromoBanner.ascx" />
     <Content Include="Controls\PromoFrontPoducts.ascx" />
     <Content Include="Controls\SearchMenu.ascx" />
     <Content Include="css\bootstrap-grid.css" />
@@ -124,6 +126,7 @@
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="Order.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -243,6 +246,13 @@
     <Compile Include="Controls\HeaderBrands.ascx.designer.cs">
       <DependentUpon>HeaderBrands.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\OrdersList.ascx.cs">
+      <DependentUpon>OrdersList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OrdersList.ascx.designer.cs">
+      <DependentUpon>OrdersList.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Pager.ascx.cs">
       <DependentUpon>Pager.ascx</DependentUpon>
     </Compile>
@@ -255,6 +265,13 @@
     </Compile>
     <Compile Include="Controls\ProductsList.ascx.designer.cs">
       <DependentUpon>ProductsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PromoBanner.ascx.cs">
+      <DependentUpon>PromoBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PromoBanner.ascx.designer.cs">
+      <DependentUpon>PromoBanner.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\PromoFrontPoducts.ascx.cs">
       <DependentUpon>PromoFrontPoducts.ascx</DependentUpon>
@@ -293,6 +310,13 @@
     </Compile>
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

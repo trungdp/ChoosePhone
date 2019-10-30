@@ -3,7 +3,7 @@
 }
 body {
 }
-#navbar {
+#navbar, #footer {
     background-color: #646464;
     color: #f8f8f8;
 }
