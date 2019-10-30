@@ -19,6 +19,6 @@ namespace DataAccess.DTO
         public string PromotionCode { get; set; }
         public string Thumbnail { get; set; }
         public string Image { get; set; }
-
+        public bool PromoFront { get; set; }
     }
 }
