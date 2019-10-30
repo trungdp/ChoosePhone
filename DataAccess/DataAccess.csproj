@@ -48,6 +48,10 @@
     <Compile Include="Classes\Order.cs" />
     <Compile Include="Classes\OrderDetail.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
+    <Compile Include="DAO\CartDAO.cs" />
+    <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Cart.cs" />

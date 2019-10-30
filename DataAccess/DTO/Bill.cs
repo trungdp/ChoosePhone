@@ -9,7 +9,7 @@ namespace DataAccess.DTO
     class Bill
     {
         public int BillID { get; set; }
-        public int CustomerID { get; set; }
+        public int? CustomerID { get; set; }
         public int ProductID { get; set; }
         public int SellAt { get; set; }
         public int CashierID { get; set; }
