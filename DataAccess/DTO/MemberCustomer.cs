@@ -12,7 +12,7 @@ namespace DataAccess.DTO
         public int AccountID { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
-        public string Identity { get; set; }
+        public string IDCard { get; set; }
         public int Sex { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }

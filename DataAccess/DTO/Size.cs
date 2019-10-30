@@ -8,10 +8,10 @@ namespace DataAccess.DTO
 {
     public class Size
     {
-        public int sizeID { get; set; }
-        public double width { get; set; }
-        public double height { get; set; }
-        public double ratio { get; set; }
+        public int SizeID { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public double Ratio { get; set; }
 
         public Size() { }
     }

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ChoosePhone"
+    "\\DataAccess",
+    "\\DataAccess\\DAO",
+    "\\DataAccess\\DTO"
   ],
   "SelectedNode": "\\ChoosePhone.sln",
   "PreviewInSolutionExplorer": false

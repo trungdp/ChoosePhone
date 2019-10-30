@@ -16,7 +16,7 @@ namespace DataAccess.DTO
         public DateTime DateShipping { get; set; }
         public float SubTotal { get; set; }
         public int Status { get; set; }
-        public string ShippingAdress { get; set; }
+        public string ShippingAddress { get; set; }
 
         public Order () {}
     }

@@ -1,25 +1,24 @@
-﻿using Core;
-using DataAccess.DTO;
-using System.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Core;
+using DataAccess.DTO;
+using System.Data;
 namespace DataAccess.DAO
 {
-    class ProductDAO
+    class PromotionDAO
     {
-        public static List<Product> All()
+        public static List<Promotion> All()
         {
-            return CBO.FillCollection<Product>(DataProvider.Instance.ExecuteReader("Product_All"));
+            return CBO.FillCollection<Promotion>(DataProvider.Instance.ExecuteReader("Promotion_All"));
         }
-        public static Product Single(string productID)
+        public static Promotion Single(string PromotionID)
         {
             try
             {
-                return CBO.FillObject<Product>(DataProvider.Instance.ExecuteReader("Product_Single",  Convert.ToInt32(productID)));
+                return CBO.FillObject<Promotion>(DataProvider.Instance.ExecuteReader("Promotion_Single", Convert.ToInt32(PromotionID)));
             }
             catch (Exception)
             {
@@ -29,30 +28,28 @@ namespace DataAccess.DAO
 
         public static int Count()
         {
-            return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("Product_Count"));
+            return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("Promotion_Count"));
         }
 
-        public static int Insert(Product data)
+        public static int Insert(Promotion data)
         {
             object rs = DataProvider.Instance.ExecuteNonQueryWithOutput(
-                "@ProductID", "Product_Insert", data.ProducerID,data.Name,
-                data.BasicPrice,data.Description,data.OperatingSystemID,data.SizeID,
-                data.PromotionCode,data.Thumbnail,data.Image,data.PromoFront);
+                "@PromotionID", "Promotion_Insert", data.PromotionCode, data.ProductID, data.PromotionName, 
+                data.ObjectPromotion, data.PromotionPercent, data.Description);
             return rs != null ? Convert.ToInt32(rs) : 0;
         }
 
 
-        public static bool Update(Product data)
+        public static bool Update(Promotion data)
         {
-            int rs = DataProvider.Instance.ExecuteNonQuery("Product_Update", data.ProducerID, data.Name,
-                data.BasicPrice, data.Description, data.OperatingSystemID, data.SizeID,
-                data.PromotionCode, data.Thumbnail, data.Image, data.PromoFront);
+            int rs = DataProvider.Instance.ExecuteNonQuery("Promotion_Update", data.PromotionCode, data.ProductID, 
+                data.PromotionName, data.ObjectPromotion, data.PromotionPercent, data.Description);
             return rs > 0;
         }
 
-        public static bool UpdatePromo(string productID, bool promo)
+        public static bool UpdatePromo(string PromotionID, bool promo)
         {
-            int rs = DataProvider.Instance.ExecuteNonQuery("Product_UpdatePromo", productID, promo);
+            int rs = DataProvider.Instance.ExecuteNonQuery("Promotion_UpdatePromo", PromotionID, promo);
             return rs > 0;
         }
 
@@ -60,7 +57,7 @@ namespace DataAccess.DAO
         {
             try
             {
-                return DataProvider.Instance.ExecuteNonQuery("Product_Delete", Convert.ToInt32(movieID)) > 0;
+                return DataProvider.Instance.ExecuteNonQuery("Promotion_Delete", Convert.ToInt32(movieID)) > 0;
             }
             catch (Exception)
             {
@@ -68,69 +65,69 @@ namespace DataAccess.DAO
             }
         }
 
-        public static List<Product> Paging(int pageNumber, int pageSize, out int pageCount)
+        public static List<Promotion> Paging(int pageNumber, int pageSize, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
-                reader = DataProvider.Instance.ExecuteReader("Product_Paging", pageNumber, pageSize);
+                reader = DataProvider.Instance.ExecuteReader("Promotion_Paging", pageNumber, pageSize);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
 
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Promotion>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Promotion>();
             }
         }
 
-        public static List<Product> Search(string keyword, string page, out int pageCount)
+        public static List<Promotion> Search(string keyword, string page, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
                 int pageSize = GlobalConfiguration.PageSize;
-                reader = DataProvider.Instance.ExecuteReader("Product_Search", keyword, Convert.ToInt32(page),
+                reader = DataProvider.Instance.ExecuteReader("Promotion_Search", keyword, Convert.ToInt32(page),
                     GlobalConfiguration.PageSize, GlobalConfiguration.DesLenght);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Promotion>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Promotion>();
             }
         }
 
-        public static List<Product> onPromo(string page, out int pageCount)
+        public static List<Promotion> onPromo(string page, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
                 int pageSize = GlobalConfiguration.PageSize;
-                reader = DataProvider.Instance.ExecuteReader("Product_OnPromo", page,
+                reader = DataProvider.Instance.ExecuteReader("Promotion_OnPromo", page,
                     GlobalConfiguration.PageSize, GlobalConfiguration.DesLenght);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
 
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Promotion>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Promotion>();
             }
         }
     }

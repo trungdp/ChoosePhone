@@ -1,25 +1,24 @@
-﻿using Core;
-using DataAccess.DTO;
-using System.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Core;
+using DataAccess.DTO;
+using System.Data;
 namespace DataAccess.DAO
 {
-    class ProductDAO
+    class SizeDAO
     {
-        public static List<Product> All()
+        public static List<Size> All()
         {
-            return CBO.FillCollection<Product>(DataProvider.Instance.ExecuteReader("Product_All"));
+            return CBO.FillCollection<Size>(DataProvider.Instance.ExecuteReader("Size_All"));
         }
-        public static Product Single(string productID)
+        public static Size Single(string SizeID)
         {
             try
             {
-                return CBO.FillObject<Product>(DataProvider.Instance.ExecuteReader("Product_Single",  Convert.ToInt32(productID)));
+                return CBO.FillObject<Size>(DataProvider.Instance.ExecuteReader("Size_Single", Convert.ToInt32(SizeID)));
             }
             catch (Exception)
             {
@@ -27,32 +26,23 @@ namespace DataAccess.DAO
             }
         }
 
-        public static int Count()
-        {
-            return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("Product_Count"));
-        }
-
-        public static int Insert(Product data)
+        public static int Insert(Size data)
         {
             object rs = DataProvider.Instance.ExecuteNonQueryWithOutput(
-                "@ProductID", "Product_Insert", data.ProducerID,data.Name,
-                data.BasicPrice,data.Description,data.OperatingSystemID,data.SizeID,
-                data.PromotionCode,data.Thumbnail,data.Image,data.PromoFront);
+                "@SizeID", "Size_Insert", data.SizeID, data.Width, data.Height, data.Ratio);
             return rs != null ? Convert.ToInt32(rs) : 0;
         }
 
 
-        public static bool Update(Product data)
+        public static bool Update(Size data)
         {
-            int rs = DataProvider.Instance.ExecuteNonQuery("Product_Update", data.ProducerID, data.Name,
-                data.BasicPrice, data.Description, data.OperatingSystemID, data.SizeID,
-                data.PromotionCode, data.Thumbnail, data.Image, data.PromoFront);
+            int rs = DataProvider.Instance.ExecuteNonQuery("Size_Update", data.SizeID, data.Width, data.Height, data.Ratio);
             return rs > 0;
         }
 
-        public static bool UpdatePromo(string productID, bool promo)
+        public static bool UpdatePromo(string SizeID, bool promo)
         {
-            int rs = DataProvider.Instance.ExecuteNonQuery("Product_UpdatePromo", productID, promo);
+            int rs = DataProvider.Instance.ExecuteNonQuery("Size_UpdatePromo", SizeID, promo);
             return rs > 0;
         }
 
@@ -60,7 +50,7 @@ namespace DataAccess.DAO
         {
             try
             {
-                return DataProvider.Instance.ExecuteNonQuery("Product_Delete", Convert.ToInt32(movieID)) > 0;
+                return DataProvider.Instance.ExecuteNonQuery("Size_Delete", Convert.ToInt32(movieID)) > 0;
             }
             catch (Exception)
             {
@@ -68,69 +58,69 @@ namespace DataAccess.DAO
             }
         }
 
-        public static List<Product> Paging(int pageNumber, int pageSize, out int pageCount)
+        public static List<Size> Paging(int pageNumber, int pageSize, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
-                reader = DataProvider.Instance.ExecuteReader("Product_Paging", pageNumber, pageSize);
+                reader = DataProvider.Instance.ExecuteReader("Size_Paging", pageNumber, pageSize);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
 
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Size>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Size>();
             }
         }
 
-        public static List<Product> Search(string keyword, string page, out int pageCount)
+        public static List<Size> Search(string keyword, string page, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
                 int pageSize = GlobalConfiguration.PageSize;
-                reader = DataProvider.Instance.ExecuteReader("Product_Search", keyword, Convert.ToInt32(page),
+                reader = DataProvider.Instance.ExecuteReader("Size_Search", keyword, Convert.ToInt32(page),
                     GlobalConfiguration.PageSize, GlobalConfiguration.DesLenght);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Size>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Size>();
             }
         }
 
-        public static List<Product> onPromo(string page, out int pageCount)
+        public static List<Size> onPromo(string page, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
                 int pageSize = GlobalConfiguration.PageSize;
-                reader = DataProvider.Instance.ExecuteReader("Product_OnPromo", page,
+                reader = DataProvider.Instance.ExecuteReader("Size_OnPromo", page,
                     GlobalConfiguration.PageSize, GlobalConfiguration.DesLenght);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
 
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Size>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Size>();
             }
         }
     }
