@@ -65,7 +65,6 @@ namespace DataAccess.Manager
             foreach (Account acc in GetAllAccounts())
                 if (acc.Username == name)
                     return new Exception("This user name already exits!");
-            Update();
             return null;;
         }
     }

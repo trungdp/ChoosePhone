@@ -1,4 +1,5 @@
 ﻿using Core;
+using DataAccess.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,12 +32,33 @@ namespace DataAccess.DAO
                 }
             }
         }
-        public static bool Insert(string productID,DateTime date,int number, string description)
+
+        public static List<Cart> All(){
+            return CBO.FillCollection<Cart>(DataProvider.Instance.ExecuteReader("Cart_All", CartID));
+        }
+
+        public static Cart FindByProductID(string productID){
+            return CBO.FillObject<Cart>(DataProvider.Instance.ExecuteReader("Cart_ByProductID", CartID,Convert.ToInt32(productID)));
+        }
+
+        public static bool Insert(string productID,int number, string description)
         {
             try
             {
                 double subtotal = ProductDAO.Single(productID).BasicPrice * number;
-                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Insert", CartID, Convert.ToInt32(productID),date,number,subtotal,description);
+                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Insert", CartID, Convert.ToInt32(productID),DateTime.Now,number,subtotal,description);
+                return rs > 0;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static bool Update(string productID,int number, string description)
+        {
+            try
+            {
+                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Update", CartID, Convert.ToInt32(productID), number, DateTime.Now,description);
                 return rs > 0;
             }
             catch
@@ -45,11 +67,26 @@ namespace DataAccess.DAO
             }
         }
 
-        public static bool InsertWithProductID(string productID)
+        public static bool UpdateQuantity(string productID)
         {
             try
             {
-                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Insert_WithProductID", CartID, Convert.ToInt32(productID));
+                int newQuantity = Single(productID).Number + 1;
+                double newSubtotal = ProductDAO.Single(productID).BasicPrice * newQuantity;
+                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Update", CartID, Convert.ToInt32(productID),newQuantity, newSubtotal);
+                return rs > 0;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static bool UpdateQuantity(string productID, int number)
+        {
+            try
+            {
+                double newSubtotal = ProductDAO.Single(productID).BasicPrice * number;
+                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Update", CartID, Convert.ToInt32(productID),number,newSubtotal);
                 return rs > 0;
             }
             catch
@@ -58,30 +95,15 @@ namespace DataAccess.DAO
             }
         }
 
-
-        public static bool Update(string productID, int quantity)
+        public static Cart Single(string productID)
         {
             try
             {
-                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Update", CartID, Convert.ToInt32(productID), quantity);
-                return rs > 0;
+                return CBO.FillObject<Cart>(DataProvider.Instance.ExecuteReader("Cart_Single", Convert.ToInt32(productID)));
             }
-            catch
+            catch (Exception)
             {
-                return false;
-            }
-        }
-
-        public static bool UpdateQuantity(string productID, int quantity)
-        {
-            try
-            {
-                int rs = DataProvider.Instance.ExecuteNonQuery("Cart_Update", CartID, Convert.ToInt32(productID), quantity);
-                return rs > 0;
-            }
-            catch
-            {
-                return false;
+                return null;
             }
         }
 

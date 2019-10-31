@@ -10,5 +10,6 @@ namespace DataAccess.Manager
 {
     class EmployeeManager
     {
+        
     }
 }
