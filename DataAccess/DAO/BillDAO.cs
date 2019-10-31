@@ -54,12 +54,12 @@ namespace DataAccess.DAO
             }
         }
 
-        public static List<Bill> Paging(int pageNumber, int pageSize, out int pageCount)
+        public static List<Bill> Paging(string pageNumber, int pageSize, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
-                reader = DataProvider.Instance.ExecuteReader("Bill_Paging", pageNumber, pageSize);
+                reader = DataProvider.Instance.ExecuteReader("Bill_Paging", Convert.ToInt32(pageNumber) , pageSize);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
 
@@ -75,26 +75,27 @@ namespace DataAccess.DAO
             }
         }
 
-        public static List<Product> Search(string keyword, string page, out int pageCount)
+        public static List<Bill> Search(string keyword, string page, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
                 int pageSize = GlobalConfiguration.PageSize;
-                reader = DataProvider.Instance.ExecuteReader("Product_Search", keyword, Convert.ToInt32(page),
+                reader = DataProvider.Instance.ExecuteReader("Bill_Search", keyword, Convert.ToInt32(page),
                     GlobalConfiguration.PageSize, GlobalConfiguration.DesLenght);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Bill>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Bill>();
             }
         }
+
     }
 }
