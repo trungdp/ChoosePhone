@@ -28,3 +28,10 @@ E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\DataAccess\obj\Debug\DataAcces
 E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\DataAccess\obj\Debug\DataAccess.dll
 E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\DataAccess\obj\Debug\DataAccess.pdb
+D:\ChoosePhone\DataAccess\bin\Debug\DataAccess.dll
+D:\ChoosePhone\DataAccess\bin\Debug\DataAccess.pdb
+D:\ChoosePhone\DataAccess\bin\Debug\Core.dll
+D:\ChoosePhone\DataAccess\bin\Debug\Core.pdb
+D:\ChoosePhone\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+D:\ChoosePhone\DataAccess\obj\Debug\DataAccess.dll
+D:\ChoosePhone\DataAccess\obj\Debug\DataAccess.pdb
