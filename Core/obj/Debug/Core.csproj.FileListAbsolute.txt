@@ -14,3 +14,8 @@ E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\Core\obj\Debug\Core.csprojAsse
 E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
 E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\Core\obj\Debug\Core.dll
 E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone\Core\obj\Debug\Core.pdb
+D:\ChoosePhone\Core\bin\Debug\Core.dll
+D:\ChoosePhone\Core\bin\Debug\Core.pdb
+D:\ChoosePhone\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\ChoosePhone\Core\obj\Debug\Core.dll
+D:\ChoosePhone\Core\obj\Debug\Core.pdb
