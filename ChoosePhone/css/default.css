@@ -10,3 +10,8 @@ body {
     #navbar .navbar-content {
         background-color: #F2B02A;
     }
+
+.thumbnail{
+    height: 128px;
+    width: 128px;
+}
