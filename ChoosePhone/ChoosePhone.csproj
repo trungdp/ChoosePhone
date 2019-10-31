@@ -95,6 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cart.aspx" />
     <Content Include="cms\admin\css\home.css" />
     <Content Include="cms\admin\customer\CustomerUC.ascx" />
     <Content Include="cms\admin\employee\EmployeeUC.ascx" />
@@ -119,6 +120,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\default.css" />
+    <Content Include="css\site.css" />
     <Content Include="images\cart-icon.png" />
     <Content Include="images\login-icon.png" />
     <Content Include="Index.aspx" />
@@ -168,6 +170,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="cms\admin\customer\CustomerUC.ascx.cs">
       <DependentUpon>CustomerUC.ascx</DependentUpon>
