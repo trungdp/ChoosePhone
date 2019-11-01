@@ -1,22 +1,20 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="OrdersList.ascx.cs" Inherits="ChoosePhone.Controls.OrdersList" %>
 <asp:DataList ID="dlOrdersList" runat="server">
     <ItemTemplate runat="server">
-        <asp:HyperLink runat="server" ID="lnkOrder">
+        <asp:HyperLink runat="server" ID="lnkOrder" CssClass="mx-auto">
             <div runat="server" id="orderItem" class="container">
                 <!-- Order ID -->
                 ID đơn:
-                <asp:Label runat="server" CssClass="row float-right" ID="lbOrderID"></asp:Label>
+                <asp:Label runat="server" CssClass="row float-right" ID="lbOrderID" Text='<%#Eval("OrderID").ToString() %>'/>
                 <!-- Product info -->
                 <div class="row container">
-                    <img runat="server" class="col-sm-1 img-responsive" id="ProductThumbnail" scr="" />
+                    <asp:Image runat="server" cssClass="thumbnail col-sm-1 img-responsive" ID="ProductThumbnail" />
                     <div class="col">
                         <div class="container-fluid">
                             <div class="row">
-                                <asp:Label runat="server" ID="lbProductName" />
+                                <asp:Label runat="server" ID="lbProductName" Text='<%#Eval("ProductID").ToString() %>'/>
                             </div>
                             <div class="row">
-                                Màu sắc:
-                                <asp:Label runat="server" CssClass="col-md" ID="lbColor" />
                                 Giá:
                                 <asp:Label runat="server" CssClass="col-md" ID="lbPrice" />
                             </div>
@@ -24,7 +22,7 @@
                     </div>
                 </div>
                 Khách hàng:
-                <asp:Label runat="server" CssClass="row float-right" ID="lbUserID"></asp:Label>
+                <asp:Label runat="server" CssClass="row float-right" ID="lbUserID" Text='<%#Eval("CustomerID").ToString() %>'/>
                 <!-- Order status >
             <ul class="inline-list list-unstyled float-right">
                 <li class="inline-list-item">

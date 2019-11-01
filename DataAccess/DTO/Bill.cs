@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.DTO
 {
-    class Bill
+    public class Bill
     {
         public int BillID { get; set; }
         public int? CustomerID { get; set; }

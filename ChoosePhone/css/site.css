@@ -1,0 +1,269 @@
+﻿body{
+	font-family:'Helvetica Neue LT Std',Verdana, Arial, sans-serif;
+	font-size: 67.5%;
+}
+.container_12{
+	font-size:1.2em;
+}
+a, a:visited, a.active{
+	text-decoration:underline;
+	color:black;
+}
+a:hover{
+	color:red;
+}
+.button{
+	background-color:#900000;
+	color:white;
+	font-weight:bold;
+	border:solid 1px Maroon;
+	cursor: pointer;
+}
+input.button{
+	padding-bottom:1px;
+	padding-top:1px;
+	margin-right:5px;
+}
+a.button{
+	padding:2px 4px;
+	color:white;	
+	text-decoration:none;
+}
+a.button:hover{
+	color:white;
+}
+#header{
+	background:black url('../Images/headerbackground.gif') repeat-x bottom left;
+	height:120px;
+}
+#header h1{
+	padding:1.3em 0 0 0.8em;
+	font-size:2.2em;
+}
+#header h1 a{
+	color:#fff;
+	text-decoration:none;
+}
+#top a{
+	margin-top:2.5em;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	float:left;
+	text-align:center;
+	font-size:0.85em;
+}
+#top a:hover{
+	color:#FFCC00;
+}
+#mainmenu{
+	background:maroon;
+	padding:0.5em 0em 0.7em 1em;
+}
+#mainmenu a{
+	color:#FFCC00;
+	text-decoration:none;
+	font-weight:bold;
+	line-height:16px;
+	padding-left:10px;
+	font-size:0.9em;
+}
+#mainmenu a:hover{
+	color:white;
+}
+#left{
+	background: #fff url('../Images/a1.gif') repeat-y right top;
+	height:100%;
+}
+#content{
+	padding:1.2em 0 0 0;
+	line-height:1.5;
+}
+.moduletable{
+	padding: 2em 2em 0 0.5em;
+}
+.moduletable h3{
+	color:gray;
+	font-weight:bold;
+	border-bottom: dashed 1px #ccc;
+	padding-bottom:0.5em;
+	font-size:1.2em;
+}
+.moduletable ul{
+	padding: 1em 0 0 1.1em;
+	list-style:none;
+}
+.moduletable li{
+	list-style-type:square;
+	line-height:1.5em;
+}
+.moduletable li a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.moduletable li a.current {
+	color: Red;
+}
+
+.moduletable li a:hover {
+	color: Red;
+	font-style: italic;
+}
+
+.moduletable .mt-content {
+	padding: 1em 0 0 0;
+}
+
+.title{
+	color:maroon;
+	font-size:1.7em;
+	font-weight:bold;
+	display:block;
+	margin-bottom:0.2em;
+}
+
+.des{
+	font-size:1em;
+	font-weight:bold;
+	margin-bottom:0.5em;
+	display:block;
+}
+
+.pager{
+	margin-top:1em;
+	text-align:right;
+}
+
+.pager a.disabled{
+	text-decoration:none;
+	color:gray;
+}
+
+.pager a.current{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
+
+.prod.list{
+	width:335px;
+	padding-right:10px;
+	margin-bottom:2em;
+}
+
+.prod a{
+	text-decoration:none;
+}
+
+.prod img{
+	border:2px solid #c6e1ec;
+	float:left;
+	vertical-align:top;
+	margin-right:10px;
+}
+
+.prod.list img{
+	width:100px;
+}
+
+.prod.list .detail{
+	margin-left:115px;
+}
+
+.prod h3{
+	font-size:1.1em;
+	font-weight:bold;
+	margin:10px 1px 0 0;
+}
+
+.prod p{
+	margin-bottom:0.3em;
+}
+
+.prod .price{
+	font-weight:bold;
+}
+.prod .price span{
+	color:red;
+}
+
+.prod .addToCart a{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+
+
+.quantity {
+	float: left;
+	margin-right: 15px;
+	background-color: #eee;
+	position: relative;
+	width: 80px;
+	overflow: hidden
+}
+
+	.quantity input {
+		margin: 0;
+		text-align: center;
+		width: 15px;
+		height: 15px;
+		padding: 0;
+		float: right;
+		color: #000;
+		font-size: 20px;
+		border: 0;
+		outline: 0;
+		background-color: #F6F6F6
+	}
+
+		.quantity input.qty {
+			position: relative;
+			border: 0;
+			width: 100%;
+			height: 40px;
+			padding: 10px 25px 10px 10px;
+			text-align: center;
+			font-weight: 400;
+			font-size: 15px;
+			border-radius: 0;
+			background-clip: padding-box
+		}
+
+	.quantity .minus, .quantity .plus {
+		line-height: 0;
+		background-clip: padding-box;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		-webkit-background-size: 6px 30px;
+		-moz-background-size: 6px 30px;
+		color: #bbb;
+		font-size: 20px;
+		position: absolute;
+		height: 50%;
+		border: 0;
+		right: 0;
+		padding: 0;
+		width: 25px;
+		z-index: 3
+	}
+
+		.quantity .minus:hover, .quantity .plus:hover {
+			background-color: #dad8da
+		}
+
+	.quantity .minus {
+		bottom: 0
+	}
+
+.shopping-cart {
+	margin-top: 20px;
+}
+
+.shopping-cart label{
+	font-size:48px;
+	padding-left:0.5em;
+	
+}
