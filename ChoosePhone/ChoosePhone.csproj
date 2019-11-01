@@ -96,15 +96,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cms\admin\css\home.css" />
+    <Content Include="cms\admin\css\LeftColumn.css" />
     <Content Include="cms\admin\customer\CustomerUC.ascx" />
     <Content Include="cms\admin\employee\EmployeeUC.ascx" />
+    <Content Include="cms\admin\employee\LeftCo.ascx" />
     <Content Include="cms\admin\home\HomePosterUC.ascx" />
     <Content Include="cms\admin\home\HomeUC.ascx" />
     <Content Include="cms\admin\LoadModulUC.ascx" />
+    <Content Include="cms\admin\product\LeftColumn.ascx" />
     <Content Include="cms\admin\product\ProductUC.ascx" />
+    <Content Include="cms\admin\product\RightColumn.ascx" />
     <Content Include="cms\admin\profile\ProfileUC.ascx" />
+    <Content Include="cms\admin\sell\LeftColum.ascx" />
     <Content Include="cms\admin\sell\SellUC.ascx" />
     <Content Include="cms\admin\statistic\StatisticUC.ascx" />
+    <Content Include="cms\admin\updateitems\LeftColumnUpdate.ascx" />
+    <Content Include="cms\admin\updateitems\UpdateitemsUC.ascx" />
     <Content Include="Controls\HeaderBrands.ascx" />
     <Content Include="Controls\OrdersList.ascx" />
     <Content Include="Controls\Pager.ascx" />
@@ -183,6 +190,13 @@
     <Compile Include="cms\admin\employee\EmployeeUC.ascx.designer.cs">
       <DependentUpon>EmployeeUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\employee\LeftCo.ascx.cs">
+      <DependentUpon>LeftCo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\employee\LeftCo.ascx.designer.cs">
+      <DependentUpon>LeftCo.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\home\HomePosterUC.ascx.cs">
       <DependentUpon>HomePosterUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +225,13 @@
     <Compile Include="cms\admin\login\LoginUC.ascx.designer.cs">
       <DependentUpon>LoginUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\product\LeftColumn.ascx.cs">
+      <DependentUpon>LeftColumn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\product\LeftColumn.ascx.designer.cs">
+      <DependentUpon>LeftColumn.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\product\ProductUC.ascx.cs">
       <DependentUpon>ProductUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -218,12 +239,26 @@
     <Compile Include="cms\admin\product\ProductUC.ascx.designer.cs">
       <DependentUpon>ProductUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\product\RightColumn.ascx.cs">
+      <DependentUpon>RightColumn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\product\RightColumn.ascx.designer.cs">
+      <DependentUpon>RightColumn.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\profile\ProfileUC.ascx.cs">
       <DependentUpon>ProfileUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cms\admin\profile\ProfileUC.ascx.designer.cs">
       <DependentUpon>ProfileUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\sell\LeftColum.ascx.cs">
+      <DependentUpon>LeftColum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\sell\LeftColum.ascx.designer.cs">
+      <DependentUpon>LeftColum.ascx</DependentUpon>
     </Compile>
     <Compile Include="cms\admin\sell\SellUC.ascx.cs">
       <DependentUpon>SellUC.ascx</DependentUpon>
@@ -238,6 +273,20 @@
     </Compile>
     <Compile Include="cms\admin\statistic\StatisticUC.ascx.designer.cs">
       <DependentUpon>StatisticUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\updateitems\LeftColumnUpdate.ascx.cs">
+      <DependentUpon>LeftColumnUpdate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\updateitems\LeftColumnUpdate.ascx.designer.cs">
+      <DependentUpon>LeftColumnUpdate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\updateitems\UpdateitemsUC.ascx.cs">
+      <DependentUpon>UpdateitemsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\updateitems\UpdateitemsUC.ascx.designer.cs">
+      <DependentUpon>UpdateitemsUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\HeaderBrands.ascx.cs">
       <DependentUpon>HeaderBrands.ascx</DependentUpon>
