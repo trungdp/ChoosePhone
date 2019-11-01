@@ -129,6 +129,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\default.css" />
     <Content Include="css\site.css" />
+    <Content Include="EditProfile.aspx" />
     <Content Include="images\cart-icon.png" />
     <Content Include="images\login-icon.png" />
     <Content Include="Index.aspx" />
@@ -154,6 +155,7 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="Master.Master" />
+    <Content Include="Profile.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -207,6 +209,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Signup.aspx" />
+    <Content Include="UpgradePassword.aspx" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -360,6 +363,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -398,6 +408,13 @@
     <Compile Include="OrderDetail.aspx.designer.cs">
       <DependentUpon>OrderDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
@@ -405,6 +422,13 @@
     </Compile>
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradePassword.aspx.cs">
+      <DependentUpon>UpgradePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpgradePassword.aspx.designer.cs">
+      <DependentUpon>UpgradePassword.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
