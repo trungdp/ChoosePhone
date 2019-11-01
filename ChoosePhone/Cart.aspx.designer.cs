@@ -10,15 +10,6 @@
 namespace ChoosePhone {
     
     
-    public partial class Order {
-        
-        /// <summary>
-        /// OrdersList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ChoosePhone.Controls.OrdersList OrdersList1;
+    public partial class Cart {
     }
 }
