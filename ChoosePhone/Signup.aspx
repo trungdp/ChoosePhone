@@ -14,35 +14,31 @@
     <form id="form1" runat="server">
         <div>
             <div class="container" style="margin-top: 30px">
-                <div class="row">
+                <div class="row" style="margin-top: 130px">
                     <div class="col-sm-4">
                         <a href="Login.aspx">
                             <img src="images\login-icon.png" alt="logo" style="width: 90px" />
                         </a>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="btn-group btn-group-lg">
-                            <a href="Login.aspx"
-                            <button type="button" class="btn btn-warning">Dang nhap</button>
-                            </a>
-                            <a href="Signup.aspx"
-                            <button type="button" class="btn btn-warning">Dang ky</button>
-                            </a>
+                    <div class="col-sm-8 border px-0">
+                        <div class="btn-group btn-group-lg container-fluid px-0">
+                            <button type="button" class="btn btn-warning col"><a href="Login.aspx">Đăng nhập</a></button>
+                            <button type="button" class="btn btn-warning col"><a href="Signup.aspx">Đăng ký</a></button>
                         </div>
-                        <div class="login">
+                        <div class="login my-4 px-5">
                             <div class="form-group">
-                                <label for="usr">Ten dang ky:</label>
-                                <input type="text" class="form-control" id="usr" name="username" />
+                                <input runat="server" type="text" class="form-control" id="usr" name="username" placeholder="Tên đăng ký" />
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Mat khau:</label>
-                                <input type="password" class="form-control" id="pwd" name="password" />
+                                <input runat="server" type="password" class="form-control" id="pwd" name="password" placeholder="Mật khẩu" />
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Nhap lat khau:</label>
-                                <input type="password" class="form-control" id="pwd" name="password" />
+                                <input runat="server" type="password" class="form-control" id="reEnterPwd" name="password" placeholder="Nhập lại mật khẩu" />
                             </div>
-                            <button type="submit" class="btn btn-primary">Dang ky </button>
+                            <div class="text-center">
+                                <span id="btnLogin" class="btn btn-warning col-sm-3">Đăng ký </span>
+                                <span id="btnCancel" class="btn btn-warning col-sm-3">Thoát </span>
+                            </div>
                         </div>
 
 

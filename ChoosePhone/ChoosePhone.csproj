@@ -100,6 +100,7 @@
     <Content Include="Cart.aspx" />
     <Content Include="cms\admin\css\home.css" />
     <Content Include="cms\admin\customer\CustomerUC.ascx" />
+    <Content Include="cms\admin\employee\EmployeesList.ascx" />
     <Content Include="cms\admin\employee\EmployeeUC.ascx" />
     <Content Include="cms\admin\employee\LeftCo.ascx" />
     <Content Include="cms\admin\home\HomePosterUC.ascx" />
@@ -249,6 +250,13 @@
     </Compile>
     <Compile Include="cms\admin\customer\CustomerUC.ascx.designer.cs">
       <DependentUpon>CustomerUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\employee\EmployeesList.ascx.cs">
+      <DependentUpon>EmployeesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\admin\employee\EmployeesList.ascx.designer.cs">
+      <DependentUpon>EmployeesList.ascx</DependentUpon>
     </Compile>
     <Compile Include="cms\admin\employee\EmployeeUC.ascx.cs">
       <DependentUpon>EmployeeUC.ascx</DependentUpon>
