@@ -19,3 +19,9 @@ D:\ChoosePhone\Core\bin\Debug\Core.pdb
 D:\ChoosePhone\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 D:\ChoosePhone\Core\obj\Debug\Core.dll
 D:\ChoosePhone\Core\obj\Debug\Core.pdb
+E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone.git\Core\bin\Debug\Core.dll
+E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone.git\Core\bin\Debug\Core.pdb
+E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone.git\Core\obj\Debug\Core.csprojAssemblyReference.cache
+E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone.git\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone.git\Core\obj\Debug\Core.dll
+E:\WorkSpace\.NET\PhatTrienUngDungWeb\ChoosePhone.git\Core\obj\Debug\Core.pdb
