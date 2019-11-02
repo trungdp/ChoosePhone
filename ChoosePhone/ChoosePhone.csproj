@@ -110,8 +110,7 @@
     <Content Include="cms\admin\sell\LeftColum.ascx" />
     <Content Include="cms\admin\sell\SellUC.ascx" />
     <Content Include="cms\admin\statistic\StatisticUC.ascx" />
-    <Content Include="cms\admin\updateitems\LeftColumnUpdate.ascx" />
-    <Content Include="cms\admin\updateitems\UpdateitemsUC.ascx" />
+    <Content Include="cms\admin\product\UpdateitemsUC.ascx" />
     <Content Include="Controls\HeaderBrands.ascx" />
     <Content Include="Controls\OrdersList.ascx" />
     <Content Include="Controls\Pager.ascx" />
@@ -274,18 +273,11 @@
     <Compile Include="cms\admin\statistic\StatisticUC.ascx.designer.cs">
       <DependentUpon>StatisticUC.ascx</DependentUpon>
     </Compile>
-    <Compile Include="cms\admin\updateitems\LeftColumnUpdate.ascx.cs">
-      <DependentUpon>LeftColumnUpdate.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="cms\admin\updateitems\LeftColumnUpdate.ascx.designer.cs">
-      <DependentUpon>LeftColumnUpdate.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="cms\admin\updateitems\UpdateitemsUC.ascx.cs">
+    <Compile Include="cms\admin\product\UpdateitemsUC.ascx.cs">
       <DependentUpon>UpdateitemsUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="cms\admin\updateitems\UpdateitemsUC.ascx.designer.cs">
+    <Compile Include="cms\admin\product\UpdateitemsUC.ascx.designer.cs">
       <DependentUpon>UpdateitemsUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\HeaderBrands.ascx.cs">
