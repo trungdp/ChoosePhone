@@ -17,6 +17,7 @@
 <div class="sitemap">
     <asp:SiteMapPath ID="sitemapMPth" runat="server" CssClass="site-map"></asp:SiteMapPath>
 </div>
+<hr />
 <div class="load-modul">
 
     <asp:PlaceHolder ID="loadModulePlh" runat="server"></asp:PlaceHolder>
