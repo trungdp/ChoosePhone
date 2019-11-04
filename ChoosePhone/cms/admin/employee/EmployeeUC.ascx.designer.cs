@@ -11,23 +11,23 @@ namespace ChoosePhone.cms.admin.employee {
     
     
     public partial class EmployeeUC {
-        
-        /// <summary>
-        /// LeftCo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ChoosePhone.cms.admin.employee.LeftCo LeftCo;
-        
-        /// <summary>
-        /// EmployeesList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ChoosePhone.cms.admin.employee.EmployeesList EmployeesList1;
-    }
+
+		/// <summary>
+		/// LeftCo control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::ChoosePhone.cms.admin.employee.LeftCo LeftCo;
+
+		/// <summary>
+		/// EmployeesList1 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::ChoosePhone.cms.admin.employee.EmployeesList EmployeesList1;
+	}
 }

@@ -1,1 +1,7 @@
 .vs
+ChoosePhone/obj/Debug
+ChoosePhone/bin/Debug
+Core/bin/Debug
+Core/obj/Debug
+DataAccess/bin/Debug
+DataAccess/obj/Debug
