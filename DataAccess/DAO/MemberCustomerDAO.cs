@@ -32,7 +32,7 @@ namespace DataAccess.DAO
         public static int Insert(MemberCustomer data)
         {
             object rs = DataProvider.Instance.ExecuteNonQueryWithOutput(
-                "@MemberCustomer", "MemberCustomer_Insert", data.AccountID, data.Name, data.LastName, data.IDCard, data.Sex,
+                "@MemberCustomerID", "MemberCustomer_Insert", data.AccountID, data.Name, data.LastName, data.IDCard, data.Sex,
                 data.PhoneNumber, data.Address, data.Email, data.PromotionCode);
             return rs != null ? Convert.ToInt32(rs) : 0;
         }
