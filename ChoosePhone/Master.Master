@@ -14,8 +14,6 @@
     <link href="css/default.css" rel="stylesheet" />
 	<link href="css/site.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

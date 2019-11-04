@@ -101,11 +101,15 @@
     <Content Include="cms\admin\css\home.css" />
     <Content Include="cms\admin\customer\CustomerUC.ascx" />
     <Content Include="cms\admin\employee\EmployeeUC.ascx" />
+    <Content Include="cms\admin\employee\LeftCo.ascx" />
     <Content Include="cms\admin\home\HomePosterUC.ascx" />
     <Content Include="cms\admin\home\HomeUC.ascx" />
     <Content Include="cms\admin\LoadModulUC.ascx" />
+    <Content Include="cms\admin\product\LeftColumn.ascx" />
     <Content Include="cms\admin\product\ProductUC.ascx" />
+    <Content Include="cms\admin\product\RightColumn.ascx" />
     <Content Include="cms\admin\profile\ProfileUC.ascx" />
+    <Content Include="cms\admin\sell\LeftColum.ascx" />
     <Content Include="cms\admin\sell\SellUC.ascx" />
     <Content Include="cms\admin\statistic\StatisticUC.ascx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -129,6 +133,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\default.css" />
     <Content Include="css\site.css" />
+    <Content Include="EditProfile.aspx" />
     <Content Include="images\cart-icon.png" />
     <Content Include="images\login-icon.png" />
     <Content Include="Index.aspx" />
@@ -154,6 +159,7 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="Master.Master" />
+    <Content Include="Profile.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -207,6 +213,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Signup.aspx" />
+    <Content Include="UpgradePassword.aspx" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -249,6 +256,12 @@
     <Compile Include="cms\admin\employee\EmployeeUC.ascx.designer.cs">
       <DependentUpon>EmployeeUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\employee\LeftCo.ascx.cs">
+      <DependentUpon>LeftCo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\employee\LeftCo.ascx.designer.cs">
+      <DependentUpon>LeftCo.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\home\HomePosterUC.ascx.cs">
       <DependentUpon>HomePosterUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -277,6 +290,12 @@
     <Compile Include="cms\admin\login\LoginUC.ascx.designer.cs">
       <DependentUpon>LoginUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\product\LeftColumn.ascx.cs">
+      <DependentUpon>LeftColumn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\product\LeftColumn.ascx.designer.cs">
+      <DependentUpon>LeftColumn.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\product\ProductUC.ascx.cs">
       <DependentUpon>ProductUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -284,12 +303,24 @@
     <Compile Include="cms\admin\product\ProductUC.ascx.designer.cs">
       <DependentUpon>ProductUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\admin\product\RightColumn.ascx.cs">
+      <DependentUpon>RightColumn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\product\RightColumn.ascx.designer.cs">
+      <DependentUpon>RightColumn.ascx</DependentUpon>
+    </Compile>
     <Compile Include="cms\admin\profile\ProfileUC.ascx.cs">
       <DependentUpon>ProfileUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cms\admin\profile\ProfileUC.ascx.designer.cs">
       <DependentUpon>ProfileUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\sell\LeftColum.ascx.cs">
+      <DependentUpon>LeftColum.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\admin\sell\LeftColum.ascx.designer.cs">
+      <DependentUpon>LeftColum.ascx</DependentUpon>
     </Compile>
     <Compile Include="cms\admin\sell\SellUC.ascx.cs">
       <DependentUpon>SellUC.ascx</DependentUpon>
@@ -360,6 +391,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -398,6 +436,13 @@
     <Compile Include="OrderDetail.aspx.designer.cs">
       <DependentUpon>OrderDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
@@ -405,6 +450,13 @@
     </Compile>
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradePassword.aspx.cs">
+      <DependentUpon>UpgradePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpgradePassword.aspx.designer.cs">
+      <DependentUpon>UpgradePassword.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

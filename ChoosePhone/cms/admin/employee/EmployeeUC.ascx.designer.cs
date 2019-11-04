@@ -19,6 +19,6 @@ namespace ChoosePhone.cms.admin.employee {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ChoosePhone.cms.admin.employee.LeftCo LeftCo;
+        //protected global::ChoosePhone.cms.admin.employee.LeftCo LeftCo;
     }
 }
