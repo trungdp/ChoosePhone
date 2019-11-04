@@ -52,28 +52,28 @@ namespace DataAccess.DAO
                 return false;
             }
         }
-        public static List<Product> Paging(int pageNumber, int pageSize, out int pageCount)
+
+        public static List<Employee> Paging(string pageNumber, int pageSize, out int pageCount)
         {
             IDataReader reader = null;
             try
             {
-                reader = DataProvider.Instance.ExecuteReader("Employee_Paging", pageNumber, pageSize);
+                reader = DataProvider.Instance.ExecuteReader("Employee_Paging", Convert.ToInt32(pageNumber), pageSize);
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
 
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Employee>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Employee>();
             }
         }
-
-        public static List<Product> Search(string keyword, string page, out int pageCount)
+        public static List<Employee> Search(string keyword, string page, out int pageCount)
         {
             IDataReader reader = null;
             try
@@ -84,14 +84,14 @@ namespace DataAccess.DAO
                 reader.Read();
                 pageCount = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
                 reader.NextResult();
-                return CBO.FillCollection<Product>(reader);
+                return CBO.FillCollection<Employee>(reader);
             }
             catch (Exception)
             {
                 if (reader != null && reader.IsClosed == false)
                     reader.Close();
                 pageCount = 0;
-                return new List<Product>();
+                return new List<Employee>();
             }
         }
     }
