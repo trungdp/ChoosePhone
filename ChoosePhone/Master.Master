@@ -13,6 +13,7 @@
     <!--add internal css-->
     <link href="css/default.css" rel="stylesheet" />
 	<link href="css/site.css" rel="stylesheet" />
+    <link href="css/hover-min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -33,17 +34,15 @@
                 <div class="row mx-auto py-3 navbar-content">
                     <div class="col-sm-2">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <asp:TextBox CssClass="form-control mt-3" runat="server" placeholder="Nhập vào dòng điện thoại, hãng sản xuất"></asp:TextBox>
                     </div>
-                    <div class="col-sm-2">
-                        <asp:HyperLink runat="server" NavigateUrl="~/Index.aspx">
-                            <img src="images/cart-icon.png" />
+                    <div class="col-sm-2 navbar-icons">
+                        <asp:HyperLink runat="server" NavigateUrl="~/Index.aspx" CssClass="float-left mx-2">
+                            <img src="images/cart-icon.png" class="hvr-float-shadow" />
                         </asp:HyperLink>
-                    </div>
-                    <div class="col-sm-2">
-                        <asp:HyperLink runat="server" NavigateUrl="~/Index.aspx">
-                            <img src="images/login-icon.png" />
+                        <asp:HyperLink runat="server" NavigateUrl="~/Index.aspx" CssClass="my-auto pt-2">
+                            <img src="images/login-icon.png" class="hvr-float-shadow"/>
                         </asp:HyperLink>
                     </div>
                 </div>

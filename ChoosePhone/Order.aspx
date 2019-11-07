@@ -4,8 +4,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="user-info col-md-3"></div>
-    <div class="oders-list col-md-9 text-center">
+    <div class="user-info col-3"></div>
+    <div class="oders-list col-9 text-center shopping-cart border bg-dark py-lg-3 px-lg-5">
         <uc1:OrdersList ID="OrdersList1" runat="server" />
     </div>
 </asp:Content>

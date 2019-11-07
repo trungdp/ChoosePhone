@@ -5,7 +5,7 @@
 
 <uc1:Pager ID="pagerTop" runat="server" Visible="false" />
 
-<asp:DataList ID="dlProdlist" runat="server" RepeatColumns="7">
+<asp:DataList ID="dlProdlist" runat="server" RepeatColumns="6">
     <ItemTemplate>
 
         <asp:HyperLink runat="server" NavigateUrl='<%#Eval("Thumbnail") %>' ID="lnkProd" CssClass="mx-3 my-3">

@@ -1,28 +1,35 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="OrdersList.ascx.cs" Inherits="ChoosePhone.Controls.OrdersList" %>
-<asp:DataList ID="dlOrdersList" runat="server">
+<asp:DataList ID="dlOrdersList" runat="server" CssClass="container-fluid">
     <ItemTemplate runat="server">
-        <asp:HyperLink runat="server" ID="lnkOrder" CssClass="mx-auto">
-            <div runat="server" id="orderItem" class="container">
+        <asp:HyperLink runat="server" ID="lnkOrder" CssClass="mx-auto d-block ">
+            <div runat="server" id="orderItem" class="hvr-grow-shadow container border mb-3 bg-light">
                 <!-- Order ID -->
-                ID đơn:
-                <asp:Label runat="server" CssClass="row float-right" ID="lbOrderID" Text='<%#Eval("OrderID").ToString() %>'/>
+                <div class="row text-right px-3"">
+                    <p>ID đơn: </p>
+                    <asp:Label runat="server" ID="lbOrderID" Text='<%#Eval("OrderID").ToString() %>' />
+                    <hr />
+
+                </div>
                 <!-- Product info -->
                 <div class="row container">
-                    <asp:Image runat="server" cssClass="thumbnail col-sm-1 img-responsive" ID="ProductThumbnail" />
+                    <asp:Image runat="server" CssClass="thumbnail col-sm-1 img-responsive" ID="ProductThumbnail" />
                     <div class="col">
                         <div class="container-fluid">
                             <div class="row">
-                                <asp:Label runat="server" ID="lbProductName" Text='<%#Eval("ProductID").ToString() %>'/>
+                                <p>ProductID: </p>
+                                <asp:Label runat="server" ID="lbProductName" Text='<%#Eval("ProductID").ToString() %>' />
                             </div>
                             <div class="row">
-                                Giá:
+                                <p>Giá: </p>
                                 <asp:Label runat="server" CssClass="col-md" ID="lbPrice" />
                             </div>
                         </div>
                     </div>
                 </div>
-                Khách hàng:
-                <asp:Label runat="server" CssClass="row float-right" ID="lbUserID" Text='<%#Eval("CustomerID").ToString() %>'/>
+                <div class="row text-right px-3" >
+                    <p>Khách hàng: </p>
+                    <asp:Label runat="server" ID="lbUserID" Text='<%#Eval("CustomerID").ToString() %>' />
+                </div>
                 <!-- Order status >
             <ul class="inline-list list-unstyled float-right">
                 <li class="inline-list-item">
